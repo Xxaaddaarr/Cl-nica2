@@ -1,0 +1,167 @@
+<html>
+ <head>
+  <title>
+   SpareDent - Registrar Producto
+  </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .waveform-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .waveform-bg svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  </style>
+ </head>
+ <body class="min-h-screen w-full" style="background: radial-gradient(ellipse at top right, #2e3192 60%, #1b1464 100%); overflow-x: hidden;">
+  <!-- Soft waveform background for this section -->
+  <div class="waveform-bg">
+    <svg viewBox="0 0 1600 400" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,100 Q400,200 800,100 T1600,100 V400 H0 Z" fill="#3a3fc1" fill-opacity="0.18"/>
+      <path d="M0,180 Q400,80 800,180 T1600,180 V400 H0 Z" fill="#5b5ee6" fill-opacity="0.12"/>
+      <path d="M0,250 Q400,350 800,250 T1600,250 V400 H0 Z" fill="#ffffff" fill-opacity="0.07"/>
+    </svg>
+  </div>
+  <div class="relative z-10 px-8 pt-6 pb-8" style="backdrop-filter: blur(0.5px);">
+   <!-- Top bar -->
+   <div class="flex items-center">
+    <button class="flex items-center bg-white rounded-full px-4 py-2 text-[#1b1464] font-semibold text-base shadow-none mr-6">
+     <span class="mr-2 text-lg">
+      <i class="fas fa-chevron-left"></i>
+     </span>
+     REGRESAR
+    </button>
+    <div class="ml-2">
+     <span class="text-white text-4xl font-normal" style="font-family: 'Montserrat', sans-serif;">
+      SpareDent
+     </span>
+    </div>
+   </div>
+   <!-- Registrar Producto Nuevo Button -->
+   <div class="mt-6">
+    <button class="bg-white rounded-full px-8 py-3 text-[#1b1464] font-semibold text-base shadow-none">
+     REGISTRAR PRODUCTO
+     <br>
+     NUEVO
+    </button>
+   </div>
+   <!-- Search bar -->
+   <div class="flex justify-center mt-8">
+    <div class="relative w-[500px]">
+     <input class="w-full rounded-xl py-3 pl-10 pr-10 text-lg focus:outline-none" style="font-family: 'Montserrat', sans-serif;" type="text">
+     <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-2xl text-black">
+      <i class="fas fa-search"></i>
+     </span>
+     <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-2xl text-black cursor-pointer">
+      <i class="fas fa-times"></i>
+     </span>
+    </div>
+   </div>
+   <!-- Main content -->
+   <div class="flex flex-row justify-start mt-8">
+    <!-- Product info card -->
+    <div class="bg-white rounded-xl p-6 w-[900px] min-h-[420px] shadow-none">
+     <div class="flex flex-col">
+      <div class="flex flex-row justify-between">
+       <span class="text-black text-base font-normal tracking-wide" style="font-family: 'Montserrat', sans-serif;">
+        NOMBRE TECNICO DEL PRODUCTO:
+       </span>
+       <span class="text-black text-base font-normal tracking-wide" style="font-family: 'Montserrat', sans-serif;">
+        PISTON DE AIRE
+       </span>
+      </div>
+      <div class="flex flex-row mt-2">
+       <span class="text-black text-base font-normal tracking-wide mr-2" style="font-family: 'Montserrat', sans-serif;">
+        DESCRIPCIÓN:
+       </span>
+       <div class="flex-1 text-center">
+        <span class="block text-black text-base font-normal tracking-wide leading-tight" style="font-family: 'Montserrat', sans-serif;">
+         LOREM IPSUM DOLOR SIT AMET, CONSECTETUR
+         <br>
+         ADIPISCING ELIT. PELLENTESQUE IN MI UT MASSA
+         <br>
+         VEHICULA ULLAMCORMPER. PELLENTESQUE VARIUS,
+         <br>
+         URNA NON ORNARE ELEMENTUM, NULLA LOREM
+         <br>
+         PHARETRA LIGULA, VITAE CONSECTETUR LIGULA NIBH
+         <br>
+         SED NUNC.
+        </span>
+       </div>
+      </div>
+      <div class="grid grid-cols-2 gap-x-8 mt-6">
+       <div class="flex flex-col space-y-2">
+        <div class="flex flex-row">
+         <span class="text-black text-base font-normal tracking-wide w-32" style="font-family: 'Montserrat', sans-serif;">
+          MARCA:
+         </span>
+         <span class="text-black text-base font-normal tracking-wide" style="font-family: 'Montserrat', sans-serif;">
+          EURO DENTAL
+         </span>
+        </div>
+        <div class="flex flex-row">
+         <span class="text-black text-base font-normal tracking-wide w-32" style="font-family: 'Montserrat', sans-serif;">
+          MODELO:
+         </span>
+         <span class="text-black text-base font-normal tracking-wide" style="font-family: 'Montserrat', sans-serif;">
+          ILUMINIS
+         </span>
+        </div>
+        <div class="flex flex-row">
+         <span class="text-black text-base font-normal tracking-wide w-32" style="font-family: 'Montserrat', sans-serif;">
+          STOCK:
+         </span>
+         <span class="text-black text-base font-normal tracking-wide" style="font-family: 'Montserrat', sans-serif;">
+          13
+         </span>
+        </div>
+        <div class="flex flex-row">
+         <span class="text-black text-base font-normal tracking-wide w-32" style="font-family: 'Montserrat', sans-serif;">
+          UNIDADES:
+         </span>
+         <span class="text-black text-base font-normal tracking-wide" style="font-family: 'Montserrat', sans-serif;">
+          UNIDAD
+         </span>
+        </div>
+        <div class="flex flex-row">
+         <span class="text-black text-base font-normal tracking-wide w-32" style="font-family: 'Montserrat', sans-serif;">
+          SECTOR:
+         </span>
+         <span class="text-black text-base font-normal tracking-wide" style="font-family: 'Montserrat', sans-serif;">
+          A
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- Image and buttons -->
+    <div class="flex flex-col items-center ml-12">
+     <div class="bg-white rounded-2xl w-[220px] h-[320px] flex items-center justify-center mb-6">
+      <span class="text-black text-center text-base font-normal px-4" style="font-family: 'Montserrat', sans-serif;">
+       IMAGEN REFERENCIAL
+      </span>
+     </div>
+     <button class="bg-white rounded-full px-8 py-2 text-[#1b1464] font-semibold text-base mb-4" style="font-family: 'Montserrat', sans-serif;">
+      SUBIR FOTO
+     </button>
+     <button class="bg-white rounded-full px-8 py-2 text-[#1b1464] font-semibold text-base" style="font-family: 'Montserrat', sans-serif;">
+      REGISTRAR
+     </button>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <title>SpareDent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+      body {
+        background: radial-gradient(ellipse at top right, #3be6f7 0%, #1e2676 40%, #181c4e 100%);
+        font-family: 'Montserrat', Arial, sans-serif;
+        min-height: 100vh;
+        overflow: hidden;
+      }
+      .bg-curve {
+        position: absolute;
+        z-index: 0;
+        pointer-events: none;
+      }
+      .bg-curve.left {
+        left: 0;
+        bottom: 0;
+        width: 35vw;
+        height: 45vw;
+        min-width: 350px;
+        min-height: 350px;
+        max-width: 600px;
+        max-height: 600px;
+        opacity: 0.8;
+      }
+      .bg-curve.right {
+        right: 0;
+        top: 0;
+        width: 45vw;
+        height: 45vw;
+        min-width: 350px;
+        min-height: 350px;
+        max-width: 600px;
+        max-height: 600px;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body class="relative overflow-hidden">
+    <!-- Background curves -->
+    <svg class="bg-curve left" viewBox="0 0 600 600" fill="none">
+      <g opacity="0.7">
+        <path d="M300,600 Q150,400 0,600" stroke="#3be6f7" stroke-width="2" fill="none"/>
+        <path d="M300,550 Q170,370 0,550" stroke="#3be6f7" stroke-width="1.5" fill="none"/>
+        <path d="M300,500 Q200,340 0,500" stroke="#3be6f7" stroke-width="1" fill="none"/>
+        <path d="M300,450 Q230,310 0,450" stroke="#3be6f7" stroke-width="0.7" fill="none"/>
+        <path d="M300,400 Q260,280 0,400" stroke="#3be6f7" stroke-width="0.5" fill="none"/>
+      </g>
+    </svg>
+    <svg class="bg-curve right" viewBox="0 0 600 600" fill="none">
+      <g opacity="0.7">
+        <path d="M600,0 Q400,200 600,400" stroke="#3be6f7" stroke-width="2" fill="none"/>
+        <path d="M600,50 Q370,230 600,450" stroke="#3be6f7" stroke-width="1.5" fill="none"/>
+        <path d="M600,100 Q340,260 600,500" stroke="#3be6f7" stroke-width="1" fill="none"/>
+        <path d="M600,150 Q310,290 600,550" stroke="#3be6f7" stroke-width="0.7" fill="none"/>
+        <path d="M600,200 Q280,320 600,600" stroke="#3be6f7" stroke-width="0.5" fill="none"/>
+      </g>
+    </svg>
+    <!-- Main content -->
+    <div class="relative z-10 flex flex-col items-start pt-16 pl-8">
+      <div class="text-white text-4xl font-normal mb-6" style="font-family: 'Montserrat', Arial, sans-serif; letter-spacing: -2px;">
+        SpareDent
+      </div>
+      <div class="w-[450px] mb-6">
+        <div class="flex items-center bg-white rounded-lg shadow px-4 py-2">
+          <i class="fas fa-search text-black text-xl mr-3"></i>
+          <input type="text" class="flex-1 bg-transparent outline-none text-black text-lg font-normal" style="font-family: 'Montserrat', Arial, sans-serif;" />
+          <i class="fas fa-times text-black text-lg ml-2"></i>
+        </div>
+      </div>
+      <button class="w-[230px] bg-white rounded-full py-3 mb-3 text-black text-sm font-normal tracking-widest shadow" style="font-family: 'Montserrat', Arial, sans-serif; letter-spacing: 1.5px;">
+        REGISTRAR PRODUCTO<br>NUEVO
+      </button>
+      <button class="w-[230px] bg-white rounded-full py-3 mb-3 text-black text-sm font-normal tracking-widest shadow" style="font-family: 'Montserrat', Arial, sans-serif; letter-spacing: 1.5px;">
+        ACTUALIZAR ESTADO DE<br>ITEMS
+      </button>
+      <button class="w-[230px] bg-white rounded-full py-3 mb-3 text-black text-sm font-normal tracking-widest shadow" style="font-family: 'Montserrat', Arial, sans-serif; letter-spacing: 1.5px;">
+        EXPORTAR BASE DE DATOS<br>A SISTEMA
+      </button>
+      <button class="w-[230px] bg-white rounded-full py-3 mb-3 text-black text-sm font-normal tracking-widest shadow" style="font-family: 'Montserrat', Arial, sans-serif; letter-spacing: 1.5px;">
+        CONSULTAR HISTORIAL DE<br>STOCK
+      </button>
+    </div>
+  </body>
+</html>

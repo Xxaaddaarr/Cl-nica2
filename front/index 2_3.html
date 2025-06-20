@@ -1,0 +1,190 @@
+<html>
+ <head>
+  <title>
+   SpareDent
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+        font-family: 'Montserrat', Arial, sans-serif;
+      }
+      .bg-custom {
+        background: radial-gradient(ellipse at top right, #2ec4f1 0%, #1a1a6e 40%, #23236a 100%);
+      }
+      .wave-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55vw;
+        height: 55vw;
+        z-index: 0;
+        pointer-events: none;
+        background: none;
+      }
+      .wave-bg2 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 40vw;
+        height: 40vw;
+        z-index: 0;
+        pointer-events: none;
+        background: none;
+      }
+  </style>
+ </head>
+ <body class="bg-custom min-h-screen relative overflow-x-hidden">
+  <!-- Top right wave -->
+  <svg class="wave-bg" fill="none" viewbox="0 0 600 600">
+   <g opacity="0.5">
+    <path d="M300,300 m-250,0 a250,250 0 1,0 500,0 a250,250 0 1,0 -500,0" fill="none" stroke="#2ec4f1" stroke-width="2">
+    </path>
+    <path d="M300,300 m-200,0 a200,200 0 1,0 400,0 a200,200 0 1,0 -400,0" fill="none" stroke="#2ec4f1" stroke-width="1.5">
+    </path>
+    <path d="M300,300 m-150,0 a150,150 0 1,0 300,0 a150,150 0 1,0 -300,0" fill="none" stroke="#2ec4f1" stroke-width="1">
+    </path>
+   </g>
+  </svg>
+  <!-- Bottom left wave -->
+  <svg class="wave-bg2" fill="none" viewbox="0 0 600 600">
+   <g opacity="0.5">
+    <path d="M300,300 m-250,0 a250,250 0 1,0 500,0 a250,250 0 1,0 -500,0" fill="none" stroke="#2ec4f1" stroke-width="2">
+    </path>
+    <path d="M300,300 m-200,0 a200,200 0 1,0 400,0 a200,200 0 1,0 -400,0" fill="none" stroke="#2ec4f1" stroke-width="1.5">
+    </path>
+    <path d="M300,300 m-150,0 a150,150 0 1,0 300,0 a150,150 0 1,0 -300,0" fill="none" stroke="#2ec4f1" stroke-width="1">
+    </path>
+   </g>
+  </svg>
+  <div class="relative z-10 px-6 pt-12 pb-8">
+   <div class="flex flex-col items-start">
+    <span class="text-white text-4xl font-normal mb-2" style="font-family: 'Montserrat', Arial, sans-serif;">
+     SpareDent
+    </span>
+    <button class="bg-white text-[#23236a] text-base font-normal rounded-full px-8 py-3 shadow-md mb-8" style="letter-spacing:1px;">
+     ACTUALIZAR ESTADO DE
+     <br/>
+     ITEMS
+    </button>
+   </div>
+   <div class="flex items-center mb-8">
+    <div class="relative w-[500px]">
+     <input class="w-full pl-10 pr-10 py-3 rounded-xl bg-white text-[#23236a] text-lg focus:outline-none" placeholder="" type="text"/>
+     <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#23236a] text-xl">
+      <i class="fas fa-search">
+      </i>
+     </span>
+     <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#23236a] text-lg cursor-pointer">
+      <i class="fas fa-times">
+      </i>
+     </span>
+    </div>
+   </div>
+   <!-- Items List -->
+   <div class="flex flex-col gap-6">
+    <!-- Item 1 -->
+    <div class="flex bg-white rounded-xl shadow-md p-4 items-center max-w-3xl">
+     <div class="flex-1">
+      <span class="text-[#23236a] text-base font-normal">
+       <a class="underline text-[#23236a]" href="#">
+        PISTON DE AIRE
+       </a>
+       NEGRO:
+      </span>
+      <div class="text-[#23236a] text-sm font-normal leading-4 mt-1">
+       <div class="flex flex-row">
+        <div>
+         CODIGO: 0001-17-1
+         <br/>
+         MARCA: BL
+         <br/>
+         STOCK: 4
+         <br/>
+         ALMACEN: 0001
+         <br/>
+         SECTOR: A
+        </div>
+        <div class="ml-8 flex flex-col justify-start">
+         <span>
+          COD. BARRAS:
+         </span>
+         <img alt="Barcode placeholder image" class="mt-1 w-[150px] h-[30px] object-contain" src="https://placehold.co/150x30?text=Barcode"/>
+        </div>
+       </div>
+      </div>
+     </div>
+     <img alt="Photo of a metallic piston with a black top, vertical orientation" class="ml-4 w-[80px] h-[100px] object-cover rounded-md" src="https://placehold.co/80x100?text=Metal+Piston"/>
+    </div>
+    <!-- Item 2 -->
+    <div class="flex bg-white rounded-xl shadow-md p-4 items-center max-w-3xl">
+     <div class="flex-1">
+      <span class="text-[#23236a] text-base font-normal">
+       <a class="underline text-[#23236a]" href="#">
+        PISTON DE AIRE
+       </a>
+       NEGRO:
+      </span>
+      <div class="text-[#23236a] text-sm font-normal leading-4 mt-1">
+       <div class="flex flex-row">
+        <div>
+         CODIGO: 0001-17-1
+         <br/>
+         MARCA: BL
+         <br/>
+         STOCK: 4
+         <br/>
+         ALMACEN: 0001
+         <br/>
+         SECTOR: A
+        </div>
+        <div class="ml-8 flex flex-col justify-start">
+         <span>
+          COD. BARRAS:
+         </span>
+         <img alt="Barcode placeholder image" class="mt-1 w-[150px] h-[30px] object-contain" src="https://placehold.co/150x30?text=Barcode"/>
+        </div>
+       </div>
+      </div>
+     </div>
+     <img alt="Photo of a metallic piston with a black top, vertical orientation, different background" class="ml-4 w-[80px] h-[100px] object-cover rounded-md" src="https://placehold.co/80x100?text=Metal+Piston+2"/>
+    </div>
+    <!-- Item 3 -->
+    <div class="flex bg-white rounded-xl shadow-md p-4 items-center max-w-3xl">
+     <div class="flex-1">
+      <span class="text-[#23236a] text-base font-normal">
+       <a class="underline text-[#23236a]" href="#">
+        PISTON DE AIRE
+       </a>
+       NEGRO:
+      </span>
+      <div class="text-[#23236a] text-sm font-normal leading-4 mt-1">
+       <div class="flex flex-row">
+        <div>
+         CODIGO: 0001-17-1
+         <br/>
+         MARCA: BL
+         <br/>
+         STOCK: 4
+         <br/>
+         ALMACEN: 0001
+         <br/>
+         SECTOR: A
+        </div>
+        <div class="ml-8 flex flex-col justify-start">
+         <span>
+          COD. BARRAS:
+         </span>
+         <img alt="Barcode placeholder image" class="mt-1 w-[150px] h-[30px] object-contain" src="https://placehold.co/150x30?text=Barcode"/>
+        </div>
+       </div>
+      </div>
+     </div>
+     <img alt="Photo of a metallic piston with a black top, vertical orientation, similar to first" class="ml-4 w-[80px] h-[100px] object-cover rounded-md" src="https://placehold.co/80x100?text=Metal+Piston+3"/>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
